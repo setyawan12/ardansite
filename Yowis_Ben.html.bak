@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<head>
+<title>Yowis Ben Download</title>
+* {
+box-sizing: border-box;
+ user-select: none;
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select:none;
+-o-user-select:none; 
+}
 <style>
 body{
 font-size: 10px;
@@ -90,6 +101,8 @@ a:visit{
 color: #066;
 }
 </style>
+</head>
+<body oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;">
 <div class="header">
 <h2 style="color: #FFF;">Ardan Download</h2>
 <font color="#FFF" size="2">"Portal Download"</font>
@@ -138,4 +151,5 @@ Berhasilkah Bayu mempertahankan band-nya dan mendapatkan Susan?</h2>
 <audio src="./audio/lagu_galau.mp3" autoplay controls></audio>
 </center>
 
-
+</body>
+</html>

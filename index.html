@@ -1,6 +1,15 @@
+<!DOCTYPE html>
+<head>
 <title>Home-Ardanweb</title>
 <style>
-
+* {
+box-sizing: border-box;
+ user-select: none;
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select:none;
+-o-user-select:none; 
+}
 .buttonClass {
   font-size:16px;
   font-family:Arial;
@@ -25,6 +34,7 @@
 }
               
 </style>
+<head>
 <body oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;">
 <br><br><br><br>
 <center><h1>Mau cari Apa Kak Di Web Ini?</h1></center>
@@ -38,4 +48,23 @@
 <center>
 <audio src="./audio/id.mp3" autoplay controls></audio>
 </center>
+<script type="text/javascript">
+var isNS = (navigator.appName == &quot;Netscape&quot;) ? 1 : 0;
+if(navigator.appName == &quot;Netscape&quot;) document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+function mischandler(){
+return false;
+}
+function mousehandler(e){
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if(|(eventbutton==2)||(eventbutton==3)) {
+ alert("copyThieft");
+ return false;
+ }
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+</script>
 </body>
+</html>
