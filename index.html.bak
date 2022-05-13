@@ -24,10 +24,13 @@
 }
               
 </style>
+<meta charset="utf-8">    <audio controls autoplay hidden>
+        <source src="https://thohirdev.com/upload/bird.mp3" type="audio/mpeg">
+    </audio>
 <br><br><br><br>
 <center><h1>Mau cari Apa Kak Di Web Ini?</h1></center>
 <br><br>
-<center><a href="#" class="buttonClass">Yowis Ben Finale</a></center>
+<center><a href="./Yowis_Ben_Finale.html" class="buttonClass">Yowis Ben Finale</a></center>
 <br><br>
 <center><a href="#" class="buttonClass">Es teh</a></center>
 <br><br>
