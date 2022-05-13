@@ -1,118 +1,98 @@
-<style>
-body{
-font-size: 10px;
-width: 100%;
-min-height: 100%;
-margin: 0px;
-padding: 0px;
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="tr_TR">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Magelang1337 HTML TYPE</title>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=3.4.2'></script>
+<script type='text/javascript'>
+$(function() {
+var baslangic = "ardanweb@admin~$:"; //What you type into quotes comes to the beginning of the sentence.
+var d = 0; // Enter a value of 0 to write down.
+var text1 = ""; // You need to write it down..
+var depo = ""; // The previous text is stored here. Alter.
+var b = baslangic.length; // The length of the previous textin is stored here. Alter.
+var text = "";
+var repeat = 1; // The recurrence setting can be 0 or 1.
+var ch = 0; // The number of characters determines which character to switch to the other line. 0-100 like
+var item = 0; // Specifies which list to start with 0 first<li>From the start.</li>
+var items = $('#caption li').length;
+var time = 1000;
+var delay = 60; // Writing speed.
+var wait = 100; // The speed of crossing the bottom line
+$('#showCaption').css('width', ($('#caption').width() + 20));
+function tickInterval() {
+if(item < items) {
+text = $('#caption li:eq('+item+')').text();
+type(depo+baslangic+text+"\n",baslangic+text+"\n");
+text = null;
+var tick = setTimeout(tickInterval, time);
+} else {
+if(repeat == 1) {
+ch = 0;
+item = 0;
+depo = "";
+b=baslangic.length;
+tickInterval();
+} else {
+clearTimeout(tick);
 }
-.buttonClass {
-  font-size:14px;
-  font-family:Comic Sans MS;
-  width:200px;
-  height:35px;
-  border-width:3px;
-  color:#fff;
-  border-color:#4e6096;
-  font-weight:bold;
-  font-style:italic;
-  border-top-left-radius:30px;
-  border-top-right-radius:30px;
-  border-bottom-left-radius:30px;
-  border-bottom-right-radius:30px;
-  box-shadow: 4px 3px 0px 2px #9fb4f2;
-  text-shadow: 0px 4px 0px #283966;
-  background:linear-gradient(rgb(120, 146, 194), #476e9e);
 }
-
-.buttonClass:hover {
-  background: linear-gradient(#476e9e, rgb(120, 146, 194));
 }
-h1{
-color: #0A0;
-font-size: 50px;
-margin: 0px;
+ 
+function type(text,text1) {
+time = delay;
+$('#showCaption').html(text.substr(0, b++));
+ch++;
+if(ch > text1.length) {
+item++;
+ch = 0;
+time = wait;
+if(d==0)
+depo += text1;
 }
-h2{
-color: #FFF;
-font-family: "Georgia";
-font-size: 15px;
-margin: 0px;
 }
-h3{
-color: #FFF;
-font-family: "Georgia";
-font-size: 16px;
-margin: 0px;
+ 
+var tick = setTimeout(tickInterval, time);
+});
+</script>
+<style type="text/css">
+#caption {
+display: none;
 }
-.header{
-background:#0A0;
-padding: 10px;
+#showCaption{
+font-family:Courier New;
+font-size:15px;
+color:#FF0000;
+white-space:pre;
+font-weight:bold;
+width:350px;
+min-width:350px;
 }
-.content{
-background:#FFF;
-padding: 10px;
-}
-.list{
-width: 100%;
-}
-.list img{
-width: 20%;
-float: left;
-}
-.list .list-detail{
-width: 75%;
-float: left;
-margin-left: 10px;
-}
-.list .list-detail a{
-color: #0A0;
-text-decoration: none;
-font-weight: bold;
-}
-.clear{
-clear:both;
-margin-bottom: 10px;
-}
-td{
-font-size: 10px;
-}
-a{
-text-decoration: none;
-color: #066;
-}
-a:visit{
-color: #066;
-}
+ 
+ 
 </style>
-<div class="header">
-<h2 style="color: #FFF;">Ardan Download</h2>
-<font color="#FFF" size="2">"Portal Download"</font>
-<!-- Menu -->
-<center>
-<div style="background: blue; color: white; height: 21px; text-align: center; width: 25%;">
-<center>
-<div style="background: #b22222; color: white; height: 20px; text-align: center; width: 40%;">
-<marquee>Apakah kamu Ingin Berteman Dengan Nana</marquee>
-</div>
-</center>
-</div>
-</center>
-</div>
-<br>
-<div style="background: #b22222; color: white; height: 1000px; width: 100%;">
-<center>
-<a href="https://www.youtube.com/watch?v=mzQQBJjF-U8">
-      <img src="https://i.ytimg.com/vi/mzQQBJjF-U8/maxresdefault.jpg" style="width: 600px;border-radius: 50px;" />
-    </a>
-	</center>
-	<br><br>
-<h3>Yowis Ben merupakan film drama-komedi Indonesia yang dirilis pada 22 Februari 2018. Film ini dibintangi oleh Bayu Skak, Brandon Salim, Cut Meyriska, Joshua Suherman, serta Tutus Thomson. Disutradarai oleh Fajar Nugros dan Bayu Skak, film ini sebagian besar menggunakan Bahasa Jawa dan sebagian kecil menggunakan Bahasa Indonesia.</h3>
-<h1>SIPNOSIS</h1>
-<h2>Bayu (Bayu Skak) menyukai Susan (Cut Meyriska) sejak lama. Namun karena dia merasa minder dengan keadaan dirinya yang pas-pasan, Bayu memutuskan memendam perasaan itu. Namun hari-hari Bayu berubah sejak Susan mengirim voice chat ke ponsel Bayu, yang membuatnya kegeeran luar biasa mengira Susan memberi isyarat agar didekati. Ternyata Susan hanya memanfaatkan Bayu untuk membantunya mensuplai pecel untuk konsumsi teman-teman OSIS. Bayu bertekad mengubah dirinya menjadi lebih populer dari Roy (Indra Widjaya), pacar Susan, yang dikenal piawai sebagai gitaris band sekolah mereka,
-Bayu berinisiatif membentuk band bersama Doni (Joshua Suherman) - sahabat dekatnya, Yayan (Tutus Thomson) - seorang tukang tabuh beduk sebagai drummer dan Nando (Brandon Salim) - siswa ganteng yang jago keyboard. Mereka sepakat menamakan band mereka YOWIS BEN. Namun rupanya langkah Bayu dan teman-temannya tidak mudah. Dalam masa-masa YOWIS BEN tumbuh di dunia musik kota Malang, perlahan tapi pasti celah perpecahan antar personil YOWIS BEN mulai tampak.
-<br><br>
-Berhasilkah Bayu mempertahankan band-nya dan mendapatkan Susan?</h2>
-</div>
-
-
+</head>
+<body>
+<ul id="caption">
+<li> Hai Kak </li>
+<li> Situs Dalam Mode Maintenance </li>
+<li> Harap Menunggu ya ka </li>
+<li> trims </li>
+<li> ...... </li>
+<li> <!DOCTYPE html> </li>
+<li> . </li>
+<li> .. </li>
+<li> ... </li>
+<li> Jangan pernah menyerah jika kamu masih ingin mencoba. Jangan biarkan penyesalan datang karena kamu selangkah lagi untuk menang. </li>
+<li> Terkadang kesulitan harus kamu rasakan lebih dulu sebelum kebahagiaan yang sempurna datang kepadamu. </li>
+<li> - RA Kartini </li>
+ 
+</ul>
+<div id="showCaption"></div>
+</body>
+ 
+<body bgcolor="black">
+<body bgcolor="#000000">
+<body bgcolor="rgb(0,0,0)">
+ 
+</html>
