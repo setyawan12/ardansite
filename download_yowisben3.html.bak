@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <head>
 <style>
 * {
@@ -64,3 +66,4 @@ document.onmousedown = mousehandler;
 document.onmouseup = mousehandler;
 </script>
 </body></div>
+</html>
