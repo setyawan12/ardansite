@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/*"
+  to = "/sorry.html"
+  status = 404
