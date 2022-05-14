@@ -66,6 +66,5 @@ document.onmousedown = mousehandler;
 document.onmouseup = mousehandler;
 </script>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
 </body></div>
 </html>
