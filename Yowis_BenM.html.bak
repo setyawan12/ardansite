@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-<title>Lagu Hits- Ardanweb</title>
+<title>Yowis Ben- Ardanweb</title>
 <style>
 * {
 box-sizing: border-box;
@@ -13,9 +13,13 @@ box-sizing: border-box;
 </style>
 </head>
 <body oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;">
-<center><h1>SPOTIFY HITS INDONESIA</h1></center>
+
+<center>
+<img src="img/maintenance.png" width="200" height="150" alt="Sawah"/>
+
+<h1>UNDER MAINTENANCE</h1></center>
 		<center>
-<audio src="./audio/SPOTIFY TOP HITS.mp3" autoplay controls></audio>
+<audio src="./audio/lagu_galau.mp3" autoplay controls></audio>
 </center>
 <script type="text/javascript">
 var isNS = (navigator.appName == &quot;Netscape&quot;) ? 1 : 0;
