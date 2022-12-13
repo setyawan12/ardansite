@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="tr_TR">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Magelang1337 HTML TYPE</title>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=3.4.2'></script>
+<script type='text/javascript'>
+$(function() {
+var baslangic = "ardanweb@admin~$:"; //What you type into quotes comes to the beginning of the sentence.
+var d = 0; // Enter a value of 0 to write down.
+var text1 = ""; // You need to write it down..
+var depo = ""; // The previous text is stored here. Alter.
+var b = baslangic.length; // The length of the previous textin is stored here. Alter.
+var text = "";
+var repeat = 1; // The recurrence setting can be 0 or 1.
+var ch = 0; // The number of characters determines which character to switch to the other line. 0-100 like
+var item = 0; // Specifies which list to start with 0 first<li>From the start.</li>
+var items = $('#caption li').length;
+var time = 1000;
+var delay = 60; // Writing speed.
+var wait = 100; // The speed of crossing the bottom line
+$('#showCaption').css('width', ($('#caption').width() + 20));
+function tickInterval() {
+if(item < items) {
+text = $('#caption li:eq('+item+')').text();
+type(depo+baslangic+text+"\n",baslangic+text+"\n");
+text = null;
+var tick = setTimeout(tickInterval, time);
+} else {
+if(repeat == 1) {
+ch = 0;
+item = 0;
+depo = "";
+b=baslangic.length;
+tickInterval();
+} else {
+clearTimeout(tick);
+}
+}
+}
+ 
+function type(text,text1) {
+time = delay;
+$('#showCaption').html(text.substr(0, b++));
+ch++;
+if(ch > text1.length) {
+item++;
+ch = 0;
+time = wait;
+if(d==0)
+depo += text1;
+}
+}
+ 
+var tick = setTimeout(tickInterval, time);
+});
+</script>
+<style type="text/css">
+#caption {
+display: none;
+}
+#showCaption{
+font-family:Courier New;
+font-size:15px;
+color:#FF0000;
+white-space:pre;
+font-weight:bold;
+width:350px;
+min-width:350px;
+}
+ 
+ 
+</style>
+</head>
+<body>
+<ul id="caption">
+<li> Hai Kak </li>
+<li> Situs Dalam Mode Maintenance </li>
+<li> Harap Menunggu ya ka </li>
+<li> trims </li>
+<li> ... </li>
+<li> .. </li>
+<li> . </li>
+<li> .. </li>
+<li> ... </li>
+<li> Jangan pernah menyerah jika kamu masih ingin mencoba. Jangan biarkan penyesalan datang karena kamu selangkah lagi untuk menang. </li>
+<li> Terkadang kesulitan harus kamu rasakan lebih dulu sebelum kebahagiaan yang sempurna datang kepadamu. </li>
+<li> - RA Kartini </li>
+ 
+</ul>
+<div id="showCaption"></div>
+</body>
+ 
+<body bgcolor="black">
+<body bgcolor="#000000">
+<body bgcolor="rgb(0,0,0)">
+ 
+</html>

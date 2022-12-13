@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+<title>Home-Ardanweb</title>
+<style>
+* {
+box-sizing: border-box;
+ user-select: none;
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select:none;
+-o-user-select:none; 
+}
+.buttonClass {
+  font-size:16px;
+  font-family:Arial;
+  width:200px;
+  height:35px;
+  border-width:1px;
+  color:#3a8a9e;
+  border-color:#d6bcd6;
+  font-weight:bold;
+  font-style:italic;
+  border-top-left-radius:20px;
+  border-top-right-radius:20px;
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius:15px;
+  box-shadow: 8px 8px 8px 0px #899599;
+  text-shadow: 0px 50px 50px #e1e2ed;
+  background:linear-gradient(#ededed, #bab1ba);
+}
+
+.buttonClass:hover {
+  background: linear-gradient(#bab1ba, #ededed);
+}
+              
+</style>
+
+<head>
+<body oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;">
+<br><br><br><br>
+<center><h1>Hi Kaka</h1>
+<h3>
+<script>
+var Digital=new Date()
+var hours=Digital.getHours()
+//Silahkan sesuaikan dengan pesan yang Anda inginkan
+if (hours>=5&&hours<=11) //pesan pagi hari (05.00-13.00)
+document.write('<b>Selamat Pagi! Terima Kasih Sudah Berkunjung</b>')
+else if (hours==12) //pesan siang hari (12.00 - 13.00)
+document.write('<b>Selamat Siang ! Terima Kasih telah berkunjung</b>')
+else if (hours>=13&&hours<=17) //pesan sore hari(15.00-17.00)
+document.write('<b>Selamat Sore! Terima Kasih Sudah Berkunjung.</b>')
+else if (hours>=18&&hours<=20) //pesan petang hari (17.oo-19.00)
+document.write('<b>Selamat Petang! Terima Kasih Sudah Berkunjung</b>')
+else if (hours>=21&&hours<=11) //pesan malam hari (20.00-23.00)
+document.write('<b>Selamat Malam! Terima Kasih Sudah Berkunjung</b>')
+else //pesan malam mejelang pagi(00.00-04.00)
+document.write('<b>Wow, Sudah Larut Malam Anda Masih Sempat Berkunjung, Terima Kasih!</b>')
+</script>
+</h3>
+</center>
+<br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<center>
+<audio src="./audio/id.mp3" autoplay controls></audio>
+</center>
+<script type="text/javascript">
+var isNS = (navigator.appName == &quot;Netscape&quot;) ? 1 : 0;
+if(navigator.appName == &quot;Netscape&quot;) document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+function mischandler(){
+return false;
+}
+function mousehandler(e){
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if(|(eventbutton==2)||(eventbutton==3)) {
+ alert("copyThieft");
+ return false;
+ }
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+</script>
+</body>
+</html>

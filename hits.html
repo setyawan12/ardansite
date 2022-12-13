@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+<title>Lagu Hits- Ardanweb</title>
+<style>
+* {
+box-sizing: border-box;
+ user-select: none;
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select:none;
+-o-user-select:none; 
+}
+</style>
+</head>
+<body oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;">
+<center><h1>SPOTIFY HITS INDONESIA</h1></center>
+		<center>
+<audio src="./audio/SPOTIFY TOP HITS.mp3" autoplay controls></audio>
+</center>
+<script type="text/javascript">
+var isNS = (navigator.appName == &quot;Netscape&quot;) ? 1 : 0;
+if(navigator.appName == &quot;Netscape&quot;) document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+function mischandler(){
+return false;
+}
+function mousehandler(e){
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if(|(eventbutton==2)||(eventbutton==3)) {
+ alert("copyThieft");
+ return false;
+ }
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+</script>
+</body>
+</html>

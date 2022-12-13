@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+box-sizing: border-box;
+ user-select: none;
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select:none;
+-o-user-select:none; 
+}
+</style>
+</head>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<body oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;">
+<center>
+<span id="countdown">Silahkan tunggu dalam 15 detik.</span></center>
+<br />
+<div style="text-align: center;">
+<b>Yowis Ben 2</b><br />
+<a href="https://drive.google.com/uc?id=1PojZ7dsa8f7uI_sTf_bhdFNx1nn5Yj4l&export=download&confirm=t" id="download_link" style="display: none;"><img src="./img/download.png" /></a>
+<noscript>JavaScript needs to be enabled in order to be able to download.</noscript>
+<script type="application/javascript">
+(function(){
+   var message = "%d seconds before download link appears";
+   // seconds before download link becomes visible
+   var count = 15;
+   var countdown_element = document.getElementById("countdown");
+   var download_link = document.getElementById("download_link");
+   var timer = setInterval(function(){
+      // if countdown equals 0, the next condition will evaluate to false and the else-construct will be executed
+      if (count) {
+          // display text
+          countdown_element.innerHTML = "Silahkan tunggu dalam %d detik.".replace("%d", count);
+          // decrease counter
+          count--;
+      } else {
+          // stop timer
+          clearInterval(timer);
+          // hide countdown
+          countdown_element.style.display = "none";
+          // show download link
+          download_link.style.display = "";
+      }
+   }, 1000);
+})();
+</script>
+</div>
+<script type="text/javascript">
+var isNS = (navigator.appName == &quot;Netscape&quot;) ? 1 : 0;
+if(navigator.appName == &quot;Netscape&quot;) document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+function mischandler(){
+return false;
+}
+function mousehandler(e){
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if(|(eventbutton==2)||(eventbutton==3)) {
+ alert("copyThieft");
+ return false;
+ }
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+</script>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body></div>
+</html>
